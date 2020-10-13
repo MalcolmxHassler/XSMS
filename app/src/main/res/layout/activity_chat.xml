@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDED"
+    tools:context=".ChatActivity">
+
+    <!-- Where message will be listed -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#347BF1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Small image near the name and number of the contact -->
+        <ImageButton
+            android:id="@+id/returnbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#347BF1"
+            android:clickable="true"
+            android:src="@drawable/ret"
+            app:srcCompat="?actionModeCloseDrawable" />
+
+        <!-- For the user name and number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Receiver Name-->
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="His Name"
+                android:textColor="#FEFEFE"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Receiver Name-->
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="His Number"
+                android:textColor="#FEFEFE"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="#FEFEFE"
+        android:layout_above="@+id/chatLayout"/>
+
+
+    <!-- Send Message edit Text and Button -->
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- EditText : Input Message -->
+        <EditText
+            android:id="@+id/SendMessage"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Envoyer Votre Message...."
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="" />
+        <!-- Send Message Button -->
+        <ImageButton
+            android:id="@+id/SendBtn"
+            android:background="@null"
+            android:src="@drawable/sendbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

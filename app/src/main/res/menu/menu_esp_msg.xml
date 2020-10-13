@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/supprimer"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/titre1"
+        />
+    <item
+        android:id="@+id/details"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/details"
+        />
+    <item
+        android:id="@+id/supprimerPlusieur"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/supprimerPlusieur"
+        />
+
+
+</menu>

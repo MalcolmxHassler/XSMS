@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDED"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#347BF1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- For the user name and number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- find the contact Name or contact and enter the number-->
+
+            <EditText
+                  android:id="@+id/newNumber"
+                  android:layout_width="300dp"
+                  android:layout_height="wrap_content"
+                  android:hint="Entrer le numero"
+                  android:textColor="#FEFEFE" />
+
+            <Spinner
+                android:id="@+id/idspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="4dp"
+                android:layout_marginTop="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Where message will be listed -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="#FEFEFE"
+        android:layout_above="@+id/chatLayout"/>
+
+
+    <!-- Send Message edit Text and Button -->
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- EditText : Input Message -->
+        <EditText
+            android:id="@+id/SendMessage"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Envoyer Votre Message...."
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="" />
+        <!-- Send Message Button -->
+        <ImageButton
+            android:id="@+id/SendBtn"
+            android:background="@null"
+            android:src="@drawable/sendbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

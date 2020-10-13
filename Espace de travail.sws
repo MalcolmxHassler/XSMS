@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model Expanded="Yes" ID="{594CF54F-9B34-4F2A-997C-99E2BF7BEF85}" Name="colmx" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="../../Desktop/Soutenance/new important/new/colmx.oom"/>
+		<Model Expanded="Yes" ID="{876F135B-CC2B-4332-BC36-3A4CDA515209}" Name="Définition de cas d&#39;utilisation_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="../../Desktop/Soutenance/new important/new/mywork.moo"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>
